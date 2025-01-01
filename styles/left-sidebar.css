@@ -1,0 +1,104 @@
+/* Left Sidebar Styling */
+.sidebar.left {
+	position: fixed;
+	left: 130px;
+	width: auto;
+	height: 100vh;
+	/* Full viewport height */
+	background-color: var(--primary-bg-color);
+	border-right: 1px solid var(--border-color);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+/* Sidebar Items Styling */
+.sidebar.left ul {
+	list-style: none;
+	margin-top: 5px;
+	flex-grow: 1;
+	height: 100%;
+}
+
+.sidebar.left li {
+	padding: 15px;
+	font-size: 20px;
+	color: var(--primary-text-color);
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.sidebar.left ul li i {
+	font-size: 20px;
+	color: var(--primary-text-color);
+	margin-right: 5px;
+}
+
+.sidebar.left ul li:hover {
+	background-color: var(--hover-bg-color);
+	color: var(--primary-text-color);
+	border-radius: 30px;
+}
+
+/* Sidebar Button Styling */
+.sidebar.left button {
+	width: 100%;
+	margin-top: 5px;
+	background-color: var(--primary-text-color);
+	color: var(--secondary-bg-color);
+	border: none;
+	padding: 15px 15px;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	align-self: center;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+/* User Profile Styling */
+.sidebar.left .user-profile {
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+}
+
+.sidebar.left .user-profile ul {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	list-style: none;
+}
+
+.sidebar.left .user-profile .avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.sidebar.left .user-details p {
+	margin: 0;
+	font-weight: bold;
+	color: var(--primary-text-color);
+}
+
+.sidebar.left .user-details h4 {
+	margin: 0;
+	font-size: 14px;
+	color: var(--secondary-text-color);
+}
+
+/* Hide Sidebar on Mobile Devices */
+@media (max-width: 768px) {
+	.sidebar.left {
+		display: none;
+	}
+}

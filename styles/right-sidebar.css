@@ -1,0 +1,85 @@
+/* Right Sidebar Styling */
+.sidebar.right {
+	height: auto;
+	background-color: #ffffff;
+	background-color: var(--primary-bg-color);
+	border-left: 1px solid var(--border-color);
+	padding: 20px;
+	overflow-y: auto;
+}
+
+.sidebar.right h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+	color: var(--primary-text-color);
+}
+
+.sidebar.right ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar.right ul li {
+	margin-bottom: 15px;
+}
+
+/* Trending Section */
+.trending .trend {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.trending .trend p {
+	margin: 5px 0;
+	color: var(--secondary-text-color);
+	font-size: 14px;
+}
+
+.trending .trend h4 {
+	margin: 5px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--primary-text-color);
+}
+
+/* Who to Follow Section */
+.who-to-follow .profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.who-to-follow .profile img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.who-to-follow .profile-info p {
+	margin: 0;
+	font-size: 14px;
+	color: var(--primary-text-color);
+}
+
+.who-to-follow .profile-info p:last-child {
+	font-size: 12px;
+	color: var(--secondary-text-color);
+}
+
+.follow-btn {
+	background-color: var(--primary-text-color);
+	color: var(--secondary-bg-color);
+	border: none;
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+	background-color: #1991da;
+}
