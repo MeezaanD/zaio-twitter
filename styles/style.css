@@ -38,6 +38,18 @@
 	background-color: var(--primary-bg-color);
 }
 
+.content {
+	flex: 6;
+}
+
+.sidebar.left {
+	flex: 3;
+}
+
+.sidebar.right {
+	flex: 3;
+}
+
 /* Sidebar Styling */
 .sidebar.left,
 .sidebar.right {

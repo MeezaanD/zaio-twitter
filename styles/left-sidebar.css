@@ -1,9 +1,10 @@
 /* Left Sidebar Styling */
 .sidebar.left {
-	position: fixed;
-	left: 130px;
+	/* position: fixed;
+	left: 0; */
 	width: auto;
-	height: 100vh;
+	height: 100%;
+	min-height: 100vh;
 	/* Full viewport height */
 	background-color: var(--primary-bg-color);
 	border-right: 1px solid var(--border-color);
@@ -23,15 +24,15 @@
 }
 
 .sidebar.left li {
-	padding: 15px;
-	font-size: 20px;
+	padding: 8px;
+	/* font-size: 18px; */
 	color: var(--primary-text-color);
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
 .sidebar.left ul li i {
-	font-size: 20px;
+	/* font-size: 18px; */
 	color: var(--primary-text-color);
 	margin-right: 5px;
 }
@@ -49,32 +50,31 @@
 	background-color: var(--primary-text-color);
 	color: var(--secondary-bg-color);
 	border: none;
-	padding: 15px 15px;
+	padding: 10px;
 	border-radius: 30px;
-	font-size: 16px;
+	/* font-size: 16px; */
 	font-weight: bold;
 	cursor: pointer;
 	align-self: center;
 }
 
 .logo {
-	width: 50px;
-	height: 50px;
+	width: 20px;
+	height: 20px;
 	border-radius: 50%;
 	margin-left: 10px;
 }
 
 /* User Profile Styling */
-.sidebar.left .user-profile {
-	margin-top: 20px;
+.user-profile {
+	margin-top: 10px;
 	border-top: 1px solid #ddd;
-	padding-top: 20px;
 }
 
 .sidebar.left .user-profile ul {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 5px;
 	list-style: none;
 }
 
@@ -90,9 +90,9 @@
 	color: var(--primary-text-color);
 }
 
-.sidebar.left .user-details h4 {
+.sidebar.left .user-details p:last-child {
 	margin: 0;
-	font-size: 14px;
+	/* font-size: 14px; */
 	color: var(--secondary-text-color);
 }
 
