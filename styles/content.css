@@ -3,6 +3,7 @@
 	padding: 20px;
 	background-color: var(--primary-bg-color);
 	color: var(--primary-text-color);
+	border: 1px solid var(--border-color);
 }
 
 .post-form {
@@ -36,10 +37,8 @@ textarea {
 	resize: none;
 }
 
-button:disabled {
-	background-color: var(--accent-color);
-	color: var(--disabled-bg-color);
-	cursor: not-allowed;
+#tweetButton {
+	color: var(--primary-text-color);
 }
 
 button {

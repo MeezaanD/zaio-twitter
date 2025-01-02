@@ -3,7 +3,6 @@
 	height: auto;
 	background-color: #ffffff;
 	background-color: var(--primary-bg-color);
-	border-left: 1px solid var(--border-color);
 	padding: 20px;
 	overflow-y: auto;
 }
