@@ -6,41 +6,6 @@
 	border: 1px solid var(--border-color);
 }
 
-.post-form {
-	display: flex;
-	align-items: flex-start;
-	margin-bottom: 20px;
-	padding: 10px;
-	border-bottom: 1px solid var(--border-color);
-}
-
-.post-form img.avatar {
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	margin-right: 10px;
-}
-
-.post-form form {
-	width: 100%;
-}
-
-textarea {
-	width: 100%;
-	height: 60px;
-	padding: 10px;
-	border: 1px solid var(--border-color);
-	border-radius: 10px;
-	font-size: 14px;
-	background-color: var(--primary-bg-color);
-	color: var(--primary-text-color);
-	resize: none;
-}
-
-#tweetButton {
-	color: var(--primary-text-color);
-}
-
 button {
 	background-color: var(--disabled-bg-color);
 	color: var(--primary-bg-color);
@@ -55,10 +20,141 @@ button:hover {
 	background-color: var(--hover-bg-color);
 }
 
+.profile-container {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	flex-wrap: wrap;
+}
+
+.account-info {
+	margin-left: 10px;
+	flex: 1;
+}
+
+.account-name {
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.post-count {
+	margin: 0;
+	color: gray;
+}
+
+.profile-banner {
+	width: 100%;
+	min-height: 200px;
+	background-color: lightgray;
+	background-image: url('/images/banner.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.profile-details {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.profile-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-image: url('/images/profile.jpg');
+	background-position: center;
+	background-size: cover;
+	border: 2px solid var(--primary-bg-color);
+	position: absolute;
+	top: -50px;
+	left: 10px;
+}
+
+.action-icons {
+	margin-left: auto;
+	display: flex;
+	gap: 10px;
+}
+
+.action-icons ul {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+}
+
+.action-icons li {
+	border-radius: 50%;
+	border: 1px solid var(--border-color);
+	padding: 10px;
+}
+
+.follow-button {
+	background-color: var(--primary-text-color);
+	color: var(--secondary-bg-color);
+	border: none;
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	align-self: center;
+}
+
+.account-details {
+	padding: 10px;
+	width: 100%;
+}
+
+.name {
+	margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.username {
+	margin: 0;
+	color: gray;
+}
+
+.description {
+	margin: 20px 0;
+}
+
+.join-date {
+	display: flex;
+	align-items: center;
+	color: gray;
+}
+
+.calendar-icon {
+	margin-right: 5px;
+}
+
+.follow-stats {
+	display: flex;
+	gap: 20px;
+	margin-top: 10px;
+}
+
+.following,
+.followers {
+	color: gray;
+}
+
 /* Post Styling */
 .posts .post {
 	border-bottom: 1px solid var(--border-color);
-	margin-bottom: 20px;
+	margin: 20px;
 	padding-bottom: 15px;
 }
 
@@ -107,7 +203,7 @@ button:hover {
 .post-image {
 	display: flex;
 	justify-content: center;
-	max-width: 100%;
+	max-width: 20rem;
 	height: auto;
 	border-radius: 10px;
 	margin-top: 10px;
@@ -132,11 +228,9 @@ button:hover {
 	color: var(--hover-bg-color);
 }
 
-/* Icons Styling */
 .post-actions button i {
 	font-size: 20px;
 }
-
 
 .tabs {
 	display: flex;
@@ -163,23 +257,6 @@ button:hover {
 	bottom: -1px;
 	height: 2px;
 	background-color: var(--primary-text-color);
-}
-
-.form-actions {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 10px;
-}
-
-.form-actions .icons i {
-	margin-right: 10px;
-	cursor: pointer;
-	color: var(--accent-color);
-}
-
-.form-actions .icons i:hover {
-	color: var(--hover-bg-color);
 }
 
 .show-posts {
@@ -231,5 +308,38 @@ button:hover {
 	.book-and-share {
 		display: flex;
 		gap: 0;
+	}
+
+	.profile-container {
+		width: 90%;
+	}
+
+	.profile-image {
+		width: 80px;
+		height: 80px;
+	}
+
+	.account-name {
+		font-size: 18px;
+	}
+
+	.account-info {
+		margin-left: 5px;
+	}
+
+	.account-details {
+		padding: 8px;
+	}
+
+	.follow-button {
+		width: 100%;
+	}
+
+	.action-icons ul {
+		justify-content: space-between;
+	}
+
+	.follow-stats {
+		gap: 16px;
 	}
 }

@@ -29,7 +29,7 @@
 				<li><i class="fas fa-bookmark"></i> Bookmarks</li>
 				<li><i class="fas fa-briefcase"></i> Jobs</li>
 				<li><i class="fas fa-users"></i> Communities</li>
-				<li><i class="fas fa-bookmark"></i> Premium</li>
+				<li><i class="fas fa-x"></i> Premium</li>
 				<li><i class="fas fa-building"></i> Verified Orgs</li>
 				<li><i class="fas fa-user"></i> Profile</li>
 				<li><i class="fas fa-ellipsis-h"></i> More</li>
@@ -51,30 +51,57 @@
 
 		<!-- Main Content -->
 		<main class="content">
+			<div class="profile-container">
+				<div class="header">
+					<div class="back-arrow">
+						<i class="fa-solid fa-arrow-left"></i>
+					</div>
+					<div class="account-info">
+						<h1 class="account-name">meezaan davids</h1>
+						<p class="post-count">1K Posts</p>
+					</div>
+				</div>
+				<div class="profile-banner">
+				</div>
+				<div class="profile-details">
+					<div class="profile-image">
+					</div>
+					<div class="action-icons">
+						<ul>
+							<li><i class="fas fa-ellipsis-h"></i></li>
+							<li><i class="fas fa-magnifying-glass"></i></li>
+							<li><i class="fas fa-message"></i></li>
+						</ul>
+					</div>
+					<button class="follow-button">Follow</button>
+				</div>
+				<div class="account-details">
+					<h2 class="name">meezaan davids</h2>
+					<p class="username">@DavidsMeezaan</p>
+					<p class="description">Aspiring Web Developer</p>
+					<div class="join-date">
+						<span class="calendar-icon">
+							<i class="fa-solid fa-calendar"></i>
+						</span>
+						<span>Joined January 2025</span>
+					</div>
+					<div class="follow-stats">
+						<span class="following">552 Following</span>
+						<span class="followers">1.4M Followers</span>
+					</div>
+				</div>
+			</div>
+
 			<div class="tabs">
 				<input type="radio" id="tab1" name="tab" checked>
-				<label for="tab1">For You</label>
+				<label for="tab1">Posts</label>
 				<input type="radio" id="tab2" name="tab">
-				<label for="tab2">Following</label>
+				<label for="tab2">Replies</label>
+				<input type="radio" id="tab3" name="tab">
+				<label for="tab3">Highlights</label>
+				<input type="radio" id="tab4" name="tab">
+				<label for="tab4">Media</label>
 			</div>
-			<div class="post-form">
-				<img class="avatar" src="images/profile.jpg" alt="User Avatar">
-				<form>
-					<textarea id="tweetInput" placeholder="What is happening"></textarea>
-					<div class="form-actions">
-						<div class="icons">
-							<i class="fas fa-image"></i>
-							<i class="fas fa-gift"></i>
-							<i class="fas fa-image"></i>
-							<i class="fas fa-smile"></i>
-							<i class="fas fa-calendar-alt"></i>
-							<i class="fas fa-map-marker-alt"></i>
-						</div>
-						<button type="button" id="tweetButton" disabled>Post</button>
-					</div>
-				</form>
-			</div>
-			<a href="#" class="show-posts">Show All Posts</a>
 			<div class="posts">
 				<div class="post">
 					<div class="post-header">
@@ -85,7 +112,8 @@
 						</div>
 					</div>
 					<div class="post-content">
-						<p>Make 2025 our best year yet</p>
+						<p>Exploring the fundamentals of web development with HTML, CSS, and JavaScript.</p>
+						<img class="post-image" src="images/html-css-js.png" alt="Post Image">
 					</div>
 					<div class="post-actions">
 						<button><i class="fas fa-comment"></i> 42</button>
@@ -98,118 +126,72 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="post">
 					<div class="post-header">
-						<img class="avatar" src="images/fpl.jpeg" alt="User Avatar">
+						<img class="avatar" src="images/profile.jpg" alt="User Avatar">
 						<div class="post-info">
-							<h4>Fantasy Premier League <span>@OfficialFPL · 3h</span></h4>
+							<h4>meezaan davids <span>@DavidsMeezaan · 3h</span></h4>
 							<i class="fas fa-ellipsis-h"></i>
 						</div>
 					</div>
 					<div class="post-content">
-						<div class="post-content">
-							<p>Over 231, 000 managers have brought in Luis Diaz for Gameweek 20 😯
-								<br>
-								Are you one of them?
-							</p>
-						</div>
-						<img class="post-image" src="images/content.jpeg" alt="Post Image">
+						<p>Today I built a simple web app using React! I’m getting better at JavaScript.</p>
+						<img class="post-image" src="images/react.png" alt="Post Image">
 					</div>
 					<div class="post-actions">
-						<button><i class="fas fa-comment"></i> 17</button>
+						<button><i class="fas fa-comment"></i> 30</button>
+						<button><i class="fas fa-retweet"></i> 10</button>
+						<button><i class="fas fa-heart"></i> 200</button>
+						<button><i class="fas fa-chart-bar"> 500</i></button>
+						<div class="book-and-share">
+							<button><i class="fas fa-bookmark"></i></button>
+							<button><i class="fas fa-share"></i></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="post-header">
+						<img class="avatar" src="images/profile.jpg" alt="User Avatar">
+						<div class="post-info">
+							<h4>meezaan davids <span>@DavidsMeezaan · 5h</span></h4>
+							<i class="fas fa-ellipsis-h"></i>
+						</div>
+					</div>
+					<div class="post-content">
+						<p>Check out my new blog post on modern CSS techniques for responsive design!</p>
+						<img class="post-image" src="images/css.webp" alt="Post Image">
+					</div>
+					<div class="post-actions">
+						<button><i class="fas fa-comment"></i> 72</button>
 						<button><i class="fas fa-retweet"></i> 14</button>
-						<button><i class="fas fa-heart"></i> 98</button>
-						<button><i class="fas fa-chart-bar"></i> 21k</button>
+						<button><i class="fas fa-heart"></i> 400</button>
+						<button><i class="fas fa-chart-bar"> 2k</i></button>
 						<div class="book-and-share">
 							<button><i class="fas fa-bookmark"></i></button>
 							<button><i class="fas fa-share"></i></button>
 						</div>
 					</div>
 				</div>
+
 				<div class="post">
 					<div class="post-header">
-						<img class="avatar" src="images/user1.jpeg" alt="User Avatar">
+						<img class="avatar" src="images/profile.jpg" alt="User Avatar">
 						<div class="post-info">
-							<h4>John Smith <span>@johnsmith · 4h</span></h4>
+							<h4>meezaan davids <span>@DavidsMeezaan · 6h</span></h4>
 							<i class="fas fa-ellipsis-h"></i>
 						</div>
 					</div>
 					<div class="post-content">
-						<p>Another day, another opportunity to make things better. Stay motivated!</p>
-					</div>
-					<div class="post-actions">
-						<button><i class="fas fa-comment"></i> 302</button>
-						<button><i class="fas fa-retweet"></i> 57</button>
-						<button><i class="fas fa-heart"></i> 153</button>
-						<button><i class="fas fa-chart-bar"></i> 15k</button>
-						<div class="book-and-share">
-							<button><i class="fas fa-bookmark"></i></button>
-							<button><i class="fas fa-share"></i></button>
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="post-header">
-						<img class="avatar" src="images/uefa.jpeg" alt="User Avatar">
-						<div class="post-info">
-							<h4>UEFA Champions League <span>@ChampionsLeague · 5h</span></h4>
-							<i class="fas fa-ellipsis-h"></i>
-						</div>
-					</div>
-					<div class="post-content">
-						<p>When you see this trophy, what player do you think of?</p>
-						<img class="post-image" src="images/content2.jpeg" alt="Post Image">
-					</div>
-					<div class="post-actions">
-						<button><i class="fas fa-comment"></i> 550</button>
-						<button><i class="fas fa-retweet"></i> 256</button>
-						<button><i class="fas fa-heart"></i> 3.4k</button>
-						<button><i class="fas fa-chart-bar"></i> 207k</button>
-						<div class="book-and-share">
-							<button><i class="fas fa-bookmark"></i></button>
-							<button><i class="fas fa-share"></i></button>
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="post-header">
-						<img class="avatar" src="images/user2.jpeg" alt="User Avatar">
-						<div class="post-info">
-							<h4>Lisa Ray <span>@lisaray · 6h</span></h4>
-							<i class="fas fa-ellipsis-h"></i>
-						</div>
-					</div>
-					<div class="post-content">
-						<p>Who else is excited for the weekend? Let me know your plans!</p>
+						<p>CSS Grid is a game changer for web layout design. Highly recommend giving it a try!</p>
+						<img class="post-image" src="images/web.png" alt="Post Image">
 					</div>
 					<div class="post-actions">
 						<button><i class="fas fa-comment"></i> 120</button>
-						<button><i class="fas fa-retweet"></i> 189</button>
-						<button><i class="fas fa-heart"></i> 400</button>
-						<button><i class="fas fa-chart-bar"></i> 10k</button>
-						<div>
-							<button><i class="fas fa-bookmark"></i></button>
-							<button><i class="fas fa-share"></i></button>
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="post-header">
-						<img class="avatar" src="images/user3.jpg" alt="User Avatar">
-						<div class="post-info">
-							<h4>Anna White <span>@annawhite · 7h</span></h4>
-							<i class="fas fa-ellipsis-h"></i>
-						</div>
-					</div>
-					<div class="post-content">
-						<p>Me when someone tries to talk to me in the morning</p>
-						<img class="post-image" src="images/content3.jpeg" alt="Post Image">
-					</div>
-					<div class="post-actions">
-						<button><i class="fas fa-comment"></i> 48</button>
-						<button><i class="fas fa-retweet"></i> 95</button>
-						<button><i class="fas fa-heart"></i> 565</button>
-						<button><i class="fas fa-chart-bar"></i> 16k</button>
+						<button><i class="fas fa-retweet"></i> 50</button>
+						<button><i class="fas fa-heart"></i> 500</button>
+						<button><i class="fas fa-chart-bar"> 3k</i></button>
 						<div class="book-and-share">
 							<button><i class="fas fa-bookmark"></i></button>
 							<button><i class="fas fa-share"></i></button>
