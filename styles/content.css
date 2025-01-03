@@ -75,11 +75,17 @@ button:hover {
 	margin-right: 10px;
 }
 
+.post-info {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
 .post-info h4 {
 	font-size: 16px;
 	font-weight: bold;
 	margin: 0;
-	color: var(--accent-color);
+	color: var(--primary-text-color);
 }
 
 .post-info h4 span {
@@ -99,6 +105,8 @@ button:hover {
 }
 
 .post-image {
+	display: flex;
+	justify-content: center;
 	max-width: 100%;
 	height: auto;
 	border-radius: 10px;
@@ -129,31 +137,6 @@ button:hover {
 	font-size: 20px;
 }
 
-/* Adjust layout for smaller screen sizes */
-@media (max-width: 768px) {
-	.content {
-		margin-left: 50px;
-		margin-right: 50px;
-	}
-
-	.post-form {
-		flex-direction: column;
-		align-items: stretch;
-	}
-
-	.post-header {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.post-header img.avatar {
-		margin-bottom: 10px;
-	}
-
-	.post-info h4 {
-		margin-bottom: 5px;
-	}
-}
 
 .tabs {
 	display: flex;
@@ -219,4 +202,34 @@ button:hover {
 .show-posts:hover {
 	background-color: var(--hover-bg-color);
 	color: var(--primary-text-color);
+}
+
+@media (max-width: 768px) {
+	.content {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.post-form {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.post-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.post-header img.avatar {
+		margin-bottom: 10px;
+	}
+
+	.post-info h4 {
+		margin-bottom: 5px;
+	}
+
+	.book-and-share {
+		display: flex;
+		gap: 0;
+	}
 }

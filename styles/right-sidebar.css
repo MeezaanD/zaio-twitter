@@ -82,3 +82,67 @@
 .follow-btn:hover {
 	background-color: #1991da;
 }
+
+.trends, .more-people {
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+	padding: 1rem;
+	margin: 10px 0;
+}
+
+.show-more {
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	padding: 8px 5px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	border-radius: 25px;
+	cursor: pointer;
+	background-color: transparent;
+	color: #1991da;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.show-more:hover {
+	background-color: var(--hover-bg-color);
+	color: var(--primary-text-color);
+}
+
+.footer-links {
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+	font-size: 14px;
+	color: var(--border-color);
+}
+
+.footer-links ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.footer-links ul li {
+	display: inline;
+}
+
+.footer-links ul li a {
+	text-decoration: none;
+	color: var(--border-color);
+}
+
+.footer-links ul li a:hover {
+	text-decoration: underline;
+}
+
+.footer-links p {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #657786;
+}

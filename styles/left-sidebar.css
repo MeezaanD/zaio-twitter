@@ -13,17 +13,19 @@
 	overflow: hidden;
 }
 
-/* Sidebar Items Styling */
-.sidebar.left ul {
+.sidebar.left .nav {
 	list-style: none;
 	margin-top: 5px;
 	flex-grow: 1;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .sidebar.left li {
 	padding: 8px;
-	font-size: 15px;
+	font-size: 16px;
 	color: var(--primary-text-color);
 	cursor: pointer;
 	transition: background-color 0.3s;
@@ -41,7 +43,6 @@
 	border-radius: 30px;
 }
 
-/* Sidebar Button Styling */
 .sidebar.left button {
 	width: 100%;
 	margin-top: 5px;
@@ -63,7 +64,6 @@
 	margin-left: 10px;
 }
 
-/* User Profile Styling */
 .user-profile {
 	margin-top: 10px;
 	border-top: 1px solid #ddd;
@@ -94,7 +94,6 @@
 	color: var(--secondary-text-color);
 }
 
-/* Hide Sidebar on Mobile Devices */
 @media (max-width: 768px) {
 	.sidebar.left {
 		display: none;
