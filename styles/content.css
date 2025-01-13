@@ -151,10 +151,45 @@ button:hover {
 	color: gray;
 }
 
+.post-form {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.post-form img.avatar {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.post-form form {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+	font-size: 14px;
+	background-color: var(--primary-bg-color);
+	color: var(--primary-text-color);
+	resize: none;
+}
+
+#tweetButton {
+	color: var(--primary-text-color);
+}
+
 /* Post Styling */
 .posts .post {
 	border-bottom: 1px solid var(--border-color);
-	margin: 20px;
+	margin-bottom: 20px;
 	padding-bottom: 15px;
 }
 
@@ -257,6 +292,23 @@ button:hover {
 	bottom: -1px;
 	height: 2px;
 	background-color: var(--primary-text-color);
+}
+
+.form-actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.form-actions .icons i {
+	margin-right: 10px;
+	cursor: pointer;
+	color: var(--accent-color);
+}
+
+.form-actions .icons i:hover {
+	color: var(--hover-bg-color);
 }
 
 .show-posts {

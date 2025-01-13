@@ -51,7 +51,10 @@
 
 		<!-- Main Content -->
 		<main class="content">
-			<div class="profile-container">
+
+			<!-- USER PROFILE PAGE -->
+
+			<!-- <div class="profile-container">
 				<div class="header">
 					<div class="back-arrow">
 						<i class="fa-solid fa-arrow-left"></i>
@@ -90,9 +93,10 @@
 						<span class="followers">1.4M Followers</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
-			<div class="tabs">
+
+			<!-- <div class="tabs">
 				<input type="radio" id="tab1" name="tab" checked>
 				<label for="tab1">Posts</label>
 				<input type="radio" id="tab2" name="tab">
@@ -101,7 +105,35 @@
 				<label for="tab3">Highlights</label>
 				<input type="radio" id="tab4" name="tab">
 				<label for="tab4">Media</label>
+			</div> -->
+
+			<!-- HOME PAGE -->
+
+			<div class="tabs">
+				<input type="radio" id="tab1" name="tab" checked>
+				<label for="tab1">For You</label>
+				<input type="radio" id="tab2" name="tab">
+				<label for="tab2">Following</label>
 			</div>
+			<div class="post-form">
+				<img class="avatar" src="images/profile.jpg" alt="User Avatar">
+				<form>
+					<textarea id="tweetInput" placeholder="What is happening"></textarea>
+					<div class="form-actions">
+						<div class="icons">
+							<i class="fas fa-image"></i>
+							<i class="fas fa-gift"></i>
+							<i class="fas fa-image"></i>
+							<i class="fas fa-smile"></i>
+							<i class="fas fa-calendar-alt"></i>
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<button type="button" id="tweetButton" disabled>Post</button>
+					</div>
+				</form>
+			</div>
+			<a href="#" class="show-posts">Show All Posts</a>
+
 			<div class="posts">
 				<div class="post">
 					<div class="post-header">
