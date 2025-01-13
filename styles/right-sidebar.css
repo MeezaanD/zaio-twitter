@@ -1,7 +1,6 @@
 /* Right Sidebar Styling */
 .sidebar.right {
 	height: auto;
-	background-color: #ffffff;
 	background-color: var(--primary-bg-color);
 	padding: 20px;
 	overflow-y: auto;
@@ -23,7 +22,34 @@
 	margin-bottom: 15px;
 }
 
+/* Search Bar Styling */
+.search-bar {
+	margin-bottom: 20px;
+	position: relative;
+	width: 400px;
+}
+
+.search-bar input {
+	width: 100%;
+	padding: 10px 10px 10px 40px;
+	border: 1px solid (--border-color);
+	background-color: transparent;
+	border-radius: 20px;
+	outline: none;
+	color: var(--primary-text-color);
+	font-size: 16px;
+}
+
+.search-bar i {
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--secondary-text-color);
+}
+
 /* Trending Section */
+
 .trending .trend {
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 10px;
@@ -43,9 +69,54 @@
 	color: var(--primary-text-color);
 }
 
+/* Premium Subscription Card */
+.premium-card {
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+	padding: 1rem;
+	margin: 10px 0;
+	width: 400px;
+}
+
+.premium-card h3 {
+	margin-top: 0;
+	font-size: 18px;
+	color: var(--primary-text-color);
+}
+
+.premium-card p {
+	font-size: 14px;
+	color: var(--secondary-text-color);
+	margin: 10px 0;
+}
+
+.subscribe-btn {
+	background-color: #1991da;
+	color: var(--primary-text-color);
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+	background-color: #1991da;
+}
+
 /* Who to Follow Section */
+
+.person-account {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
 .who-to-follow .profile {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	gap: 10px;
 }
@@ -71,7 +142,7 @@
 	background-color: var(--primary-text-color);
 	color: var(--secondary-bg-color);
 	border: none;
-	padding: 5px 10px;
+	padding: 10px 15px;
 	border-radius: 20px;
 	font-size: 14px;
 	font-weight: bold;
@@ -83,11 +154,13 @@
 	background-color: #1991da;
 }
 
-.trends, .more-people {
+.trends,
+.more-people {
 	border: 1px solid var(--border-color);
 	border-radius: 10px;
 	padding: 1rem;
 	margin: 10px 0;
+	width: 400px;
 }
 
 .show-more {
@@ -118,6 +191,7 @@
 	border-top: 1px solid #ccc;
 	font-size: 14px;
 	color: var(--border-color);
+	width: 400px;
 }
 
 .footer-links ul {

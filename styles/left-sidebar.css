@@ -1,8 +1,8 @@
 /* Left Sidebar Styling */
 .sidebar.left {
 	position: fixed;
-	left: 0;
-	width: auto;
+	left: 10%;
+	width: 300px;
 	height: 100%;
 	min-height: 100vh;
 	background-color: var(--primary-bg-color);
@@ -25,14 +25,14 @@
 
 .sidebar.left li {
 	padding: 8px;
-	font-size: 16px;
+	font-size: 25px;
 	color: var(--primary-text-color);
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
 .sidebar.left ul li i {
-	font-size: 15px;
+	font-size: 25px;
 	color: var(--primary-text-color);
 	margin-right: 5px;
 }
@@ -49,24 +49,24 @@
 	background-color: var(--primary-text-color);
 	color: var(--secondary-bg-color);
 	border: none;
-	padding: 10px;
+	padding: 18px 0;
 	border-radius: 30px;
-	/* font-size: 16px; */
+	font-size: 20px;
 	font-weight: bold;
 	cursor: pointer;
 	align-self: center;
 }
 
 .logo {
-	width: 20px;
-	height: 20px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	margin-left: 10px;
 }
 
 .user-profile {
 	margin-top: 10px;
-	border-top: 1px solid #ddd;
+	padding-top: 10px;
 }
 
 .sidebar.left .user-profile ul {
@@ -85,6 +85,7 @@
 .sidebar.left .user-details p {
 	margin: 0;
 	font-weight: bold;
+	font-size: 15px;
 	color: var(--primary-text-color);
 }
 
