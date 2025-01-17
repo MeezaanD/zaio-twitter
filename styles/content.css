@@ -183,7 +183,9 @@ textarea {
 }
 
 #tweetButton {
-	color: var(--primary-text-color);
+	color: var(--primary-bg-color);
+	font-weight: bold;
+	background-color: var(--accent-color);
 }
 
 /* Post Styling */
@@ -267,11 +269,20 @@ textarea {
 	font-size: 20px;
 }
 
+.book-and-share {
+	gap: 0 !important;
+	display: flex !important;
+}
+
 .tabs {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 10px;
 	border-bottom: 1px solid var(--border-color);
+	background-color: var(--primary-bg-color);
+	position: sticky;
+	top: 0;
+	z-index: 100;
 }
 
 .tabs input[type="radio"] {
@@ -304,7 +315,7 @@ textarea {
 .form-actions .icons i {
 	margin-right: 10px;
 	cursor: pointer;
-	color: var(--accent-color);
+	color: #1991da;
 }
 
 .form-actions .icons i:hover {
@@ -324,7 +335,7 @@ textarea {
 	border-radius: 25px;
 	cursor: pointer;
 	background-color: transparent;
-	color: var(--accent-color);
+	color: #1991da;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -333,33 +344,11 @@ textarea {
 	color: var(--primary-text-color);
 }
 
+/* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
 	.content {
-		margin-left: 50px;
-		margin-right: 50px;
-	}
-
-	.post-form {
-		flex-direction: column;
-		align-items: stretch;
-	}
-
-	.post-header {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.post-header img.avatar {
-		margin-bottom: 10px;
-	}
-
-	.post-info h4 {
-		margin-bottom: 5px;
-	}
-
-	.book-and-share {
-		display: flex;
-		gap: 0;
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 
 	.profile-container {
@@ -383,6 +372,23 @@ textarea {
 		padding: 8px;
 	}
 
+	.post-form {
+		flex-direction: column;
+	}
+
+	.post-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.post-header img.avatar {
+		margin-bottom: 10px;
+	}
+
+	.post-info h4 {
+		margin-bottom: 5px;
+	}
+
 	.follow-button {
 		width: 100%;
 	}
@@ -393,5 +399,10 @@ textarea {
 
 	.follow-stats {
 		gap: 16px;
+	}
+
+	.show-posts {
+		font-size: 12px;
+		padding: 6px 15px;
 	}
 }

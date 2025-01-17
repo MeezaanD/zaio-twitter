@@ -25,10 +25,11 @@
 	justify-content: center;
 	width: 100%;
 	background-color: var(--primary-bg-color);
-	margin-left: 7rem;
+	margin-left: 10rem;
 }
 
 body {
+	padding-bottom: 60px;
 	overflow-x: hidden;
 	background-color: var(--primary-bg-color);
 }
@@ -53,4 +54,99 @@ body::-webkit-scrollbar:horizontal {
 		width: 100%;
 	}
 
+}
+
+/* Profile Section (Mobile Only, 500px and below) */
+.mobile-profile {
+	display: none;
+	padding: 10px;
+	background-color: var(--primary-bg-color);
+	/* border-bottom: 1px solid var(--border-color); */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 110;
+}
+
+.mobile-profile .logo {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.mobile-profile .profile-image-mobile {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.mobile-profile .upgrade-button {
+	background-color: transparent;
+	color: var(--primary-text-color);
+	border: 1px solid var(--border-color);
+	padding: 8px 12px;
+	border-radius: 20px;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/* Fixed Bottom Navigation (Mobile Only, 500px and below) */
+.fixed-bottom-nav {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--primary-bg-color);
+	border-top: 1px solid var(--border-color);
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 100;
+}
+
+.fixed-bottom-nav i {
+	font-size: 20px;
+	color: var(--primary-text-color);
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.fixed-bottom-nav i:hover {
+	color: var(--hover-bg-color);
+}
+
+/* Adjustments for Mobile (500px and below) */
+@media (max-width: 500px) {
+	.mobile-profile {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+	}
+
+	.fixed-bottom-nav {
+		display: flex;
+	}
+
+	.content {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.post-form, .show-posts {
+		display: none !important;
+	}
+}
+
+/* Hide navigation for larger screens */
+@media (min-width: 501px) {
+
+	.mobile-profile,
+	.fixed-bottom-nav {
+		display: none !important;
+	}
 }
